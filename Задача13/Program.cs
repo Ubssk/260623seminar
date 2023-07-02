@@ -5,7 +5,6 @@
 
 Console.Write("Введите число: ");
 int Digit = Convert.ToInt32(Console.ReadLine());
-int div = 10;
 int result = 0;
 if (Digit < 100)
 {
@@ -16,9 +15,9 @@ if (Digit > 100 && Digit < 1000)
     result = Digit % 10;
     Console.WriteLine(result);
 }
-if ( Digit > 1000 && Digit / div < 1000)
+if ( Digit > 1000 && Digit / 10 < 1000)
 {
-    result = Digit / div % 10;
+    result = Digit / 10 % 10;
     Console.WriteLine(result);
 }
 if (Digit > 10000)
